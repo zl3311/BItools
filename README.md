@@ -11,6 +11,8 @@ certificate and sample code
 
 ## Facebook Prophet
 certificate and sample code
+difference with X11 and decomposition-based approaches
 
 ## Naive causal inference
 certificate and sample code
+mention probalistics graphic models
