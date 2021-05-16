@@ -17,6 +17,8 @@ Overall, the learning process was fun: slightly lost at the begining when I have
 
 ![ ](/SQL/linkedin-SQL.PNG)
 
+----
+
 ## A/B testing
 screenshot
 
