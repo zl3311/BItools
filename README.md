@@ -19,11 +19,13 @@ Overall, the learning process was fun: slightly lost at the begining when I have
 
 ---
 
-## A/B testing
-screenshot
-
 ## Tableau
 certificate and sample code
+
+---
+
+## A/B testing
+screenshot
 
 ## Facebook Prophet
 certificate and sample code
