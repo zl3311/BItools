@@ -1,11 +1,11 @@
 # My learning progress of some Business Intelligence tools
-
+----
 ## SQL
 SQL is like a hard requirement for many DS jobs, so it would be useful to be familiar with it ASAP.
 
 I started with watching some online tutorial videos (Yes, the one with [Mosh](https://youtu.be/7S_tz1z_5bA) :slightly_smiling_face:). The 3 hour video covers like 80% of the necessary materials, and I polished the remaining 20% by solving all leetcode database questions using MySQL.
 
-![ ](/SQL/leetcode-SQL.PNG)
+![1](/SQL/leetcode-SQL.PNG)
 
 Similar with the algorithm questions, easy and medium questions mostly test whether you know the concepts or not (the medium ones are indeed slightly more complex in logic). The hard questions are more challenging and (I believe) are close to real industry-level queries. 
 
@@ -15,9 +15,9 @@ My major takeaways throughout the process are:
 
 Overall, the learning process was fun: slightly lost at the begining when I have no idea about the materials but so much comfortable when I know it. After all the practices, I passed the LinkedIn skill test on MySQL easily.
 
-![ ](/SQL/linkedin-SQL.PNG)
+![2](/SQL/linkedin-SQL.PNG)
 
-----
+---
 
 ## A/B testing
 screenshot
