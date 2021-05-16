@@ -15,8 +15,7 @@ My major takeaways throughout the process are:
 
 Overall, the learning process was fun: slightly lost at the begining when I have no idea about the materials but so much comfortable when I know it. After all the practices, I passed  the LinkedIn skill test on MySQL easily.
 
-![ ](/SQL/linkedin-SQL.PNG)
- 
+![](/SQL/linkedin-SQL.PNG)
 
 ## A/B testing
 screenshot
