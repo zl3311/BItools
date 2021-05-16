@@ -1,5 +1,5 @@
 # My learning progress of some Business Intelligence tools
-----
+
 ## SQL
 SQL is like a hard requirement for many DS jobs, so it would be useful to be familiar with it ASAP.
 
