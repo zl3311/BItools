@@ -14,7 +14,8 @@ My major takeaways throughout the process are:
 * Despite the similarity, there are some drawbacks (and it's not all SQL's fault :upside_down_face:). Because SQL is not designed to perform object-oriented programming (like Python), some data processing procedures are not so handy. Like, you can define a customized function in Python creating/tagging new features using existing ones then apply it along the correct axis. This procedure is only similarly available and convenient in SQL if the rule is consists of '<if-else>' statements, which is much less capable than Python. Whenever I'm trying to do something "fancy" in SQL, like '<RECURSIVE CTE>', '<FUNCTION>', '<@>', I always doubt myself "do I have to do this in SQL?" :sweat_smile:
 
 Overall, the learning process was fun: slightly lost at the begining when I have no idea about the materials but so much comfortable when I know it. After all the practices, I passed  the LinkedIn skill test on MySQL easily.
-
+ ![ ](/SQL/linkedin-SQL.PNG)
+ 
 
 ## A/B testing
 screenshot
