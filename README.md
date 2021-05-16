@@ -1,7 +1,10 @@
-# A collection of Business Intelligence tools I learned
+# My learning progress of some Business Intelligence tools
 
 ## SQL
-leetcode and linkedin screenshot
+SQL is like a hard requirement for many DS jobs, so it would be useful to be familiar with it ASAP.
+
+I started with watching some online tutorial videos (Yes, the one with [Mosh](https://youtu.be/7S_tz1z_5bA) :slightly_smiling_face:). 
+
 
 ## A/B testing
 screenshot
