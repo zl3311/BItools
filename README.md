@@ -26,7 +26,10 @@ I originally thought Tableau is some sort of statistical programming language, l
 * The visualization dashboard can be set as interactive. After checking the gallery from the Tableau website, I really enjoyed the interactive nature, because it gives users the freedom to explore the data patterns from their own perspectives. Although similar visualization applications have been developed (like Plotly), Tableau is still a popular choice based on my observation.
 * The ingestion of data can be made online. This is practically useful when building real-time dashboards for decision makers to understand and react to the business directly.
 
-I watched the [tutorial video]() and enhanced the skill by accomplishing a project from Coursera. 
+To learn Tableau, I watched the [tutorial video](https://youtu.be/aHaOIvR00So) and enhanced the skill by accomplishing a project from Coursera. In the Coursera project:
+* I collected the stock related data from Google Finance website using the `GOOGLEFINANCE` API inside Google Sheet (The eco-system of Google applications actually surprised me. I didn't know previously that I could do that in Google Apps). Data can be setup to update automatically.
+* The Google Sheet can be connected to the ingestion port of Tableau, and the figures and dashboard can be further constructed upon that. For this project, I created a heatmap of the market share of some major Tech companies as size and their percent of change for the day as color. Also, I created a time series figure of these companies over the past month. These plots are merged into a dashboard as shown [here](/Tableau/). Note that this static file can be made interactive and online using a paid service of Tableau. 
+
 
 ---
 
