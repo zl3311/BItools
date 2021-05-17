@@ -24,7 +24,7 @@ I originally thought Tableau is some sort of statistical programming language, l
 
 **Tableau** is simply a data visualization tool **with minimum coding involved**. My understanding is that Tableau is designed for people with limited coding experience, and Salesforce (parent company of Tableau) indeed did a decent job achieving this goal. By clicking the mouse only, it is possible to build a pipeline that ingests data and creates visualizations upon it. I personally like two features about it:
 * The visualization dashboard can be set as interactive. After checking the gallery from the Tableau website, I really enjoyed the interactive nature, because it gives users the freedom to explore the data patterns from their own perspectives. Although similar visualization applications have been developed (like Plotly), Tableau is still a popular choice based on my observation.
-* The ingestion of data can be made online. This is useful when building real-time dashboards for decision makers to understand and react to the business directly.
+* The ingestion of data can be made online. This is practically useful when building real-time dashboards for decision makers to understand and react to the business directly.
 
 I watched the [tutorial video]() and enhanced the skill by accomplishing a project from Coursera. 
 
