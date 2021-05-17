@@ -28,9 +28,7 @@ I originally thought Tableau is some sort of statistical programming language, l
 
 To learn Tableau, I watched the [tutorial video](https://youtu.be/aHaOIvR00So) and enhanced the skill by accomplishing a project from Coursera. In the Coursera project:
 * I collected the stock related data from Google Finance website using the `GOOGLEFINANCE` API inside Google Sheet (The eco-system of Google applications actually surprised me. I didn't know previously that I could do that in Google Apps). Data can be setup to update automatically.
-* The Google Sheet can be connected to the ingestion port of Tableau, and the figures and dashboard can be further constructed upon that. For this project, I created a heatmap of the market share of some major Tech companies as size and their percent of change for the day as color. Also, I created a time series figure of these companies over the past month. These plots are merged into a dashboard as shown 
-* [here](/Tableau/Dashboard 1.pdf). Note that this static file can be made interactive and online using a paid service of Tableau. Checkout here for my [certificate](/Tableau/Coursera QMR8WGH7GL8J.pdf).
-
+* The Google Sheet can be connected to the ingestion port of Tableau, and the figures and dashboard can be further constructed upon that. For this project, I created a heatmap of the market share of some major Tech companies as size and their percent of change for the day as color. Also, I created a time series figure of these companies over the past month. These plots are merged into a dashboard as shown [here](/Tableau/Dashboard 1.pdf). Note that this static file can be made interactive and online using a paid service of Tableau. Checkout here for my.
 
 ---
 
