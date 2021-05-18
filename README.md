@@ -1,6 +1,7 @@
 # My learning progress of some Business Intelligence tools
 
 ## SQL
+
 **SQL** is like a hard requirement for many DS jobs, so it would be useful to be familiar with it ASAP.
 
 I started with watching some online tutorial videos (Yes, the one with [Mosh](https://youtu.be/7S_tz1z_5bA) :slightly_smiling_face:). The 3 hour video covers like 80% of the necessary materials, and I polished the remaining 20% by solving all leetcode database questions using MySQL.
@@ -33,13 +34,30 @@ To learn Tableau, I watched this [tutorial video](https://youtu.be/aHaOIvR00So) 
 Check out here for my [code and certificate](/Tableau/).
 
 ---
+## Facebook Prophet
+
+The name of **Facebook Prophet** was pushed to me several times when I was browsing blogs on Medium.com. Out of curiosity, I dived deeper into it.
+
+I do have some experience on time series analysis using different approaches, and I personally classify common methods into two categories:
+* Statistics approaches. I put methods like ARIMA family and filter-based methods (Holt Winters, LOWESS, STL decomposition...) into this category. These methods are popular among the statistics and the econometric communities, where interpretability matters a lot more than model performance. It's true that there is nothing bad about interpretability. However, when model performance is a major drawback, interpretability might become relatively less important in these cases, which leads to the usage of the next category.
+* Deep learning approaches. DL-based sequential models, e.g., RNNs, LSTMs, and variations like with CNNs/encoders and decoders, suffer the same common drawback as almost all deep learning methods: **blackbox nature**, which means that it's really a mess to dive deep into the intermediate layers and understand what is actually happening. Despite the mess, DL models are extremely good at representing highly nonlinear patterns, which means that these models would outperform the above classic statistics approaches significantly for cases with abundunt data and complex relationships. 
+
+Now, where does Facebook Prophet stand? [As branded by Facebook](https://facebook.github.io/prophet/), there are four major advantages:
+* Accurate and fast.
+* Fully automatic.
+* Tunable forecast.
+* Available in R and Python.
+
+I played with the package in Python through a Coursera project (as [here](/Prophet/)), and I do have some thoughts about it. The things I like about Prophet is that it is scalable in optimization thus faster in implementation. Also, external information, like holidays, can be manually incorporated into the models, which adds flexibility to model. There are many blogs comparing classic time series models with it, and results are dataset-dependent. While I reserve my attitude about its capability, I really think the Facebook DS team should re-design the API of the package. For example, you have to priorly create the container of the null output dataframe explicitly and call the fitted model that creates the prediction. Seriously Facebook? I have never seen any time series package with such user-unfriendly implementation. :-1:
+
+Overall, I tend to believe that the performances of these recent time series models (Prophet and DeepAR from Amazon) are somewhere between the two extreme categories as I mentioned above. The actual performance is really dependent on specific dataset, but it's good to see that there are recent progresses from these big techs, and I look forward to seeing they create something more general and powerful in the future.
+
+---
 
 ## A/B testing
 screenshot
 
-## Facebook Prophet
-certificate and sample code
-difference with X11 and decomposition-based approaches
+---
 
 ## Naive causal inference
 certificate and sample code
