@@ -57,7 +57,23 @@ Anyway, I tend to believe that the performances of these recent time series mode
 ---
 
 ## A/B testing
-screenshot
+
+I watched the [publicly available MOOC on A/B testing](https://www.udacity.com/course/ab-testing--ud257) by Google via Udacity. Since I'm not a subscriber of their nano-degree program, I do not have access to the final project as showcase. I did enjoy their videos though, and I'll talk about my thoughts here.
+
+**A/B testing** is an application of statistical experiment design in the domain of user experience research. That is to say, the theory of hypothesis testing and statistical inference still holds here. 
+
+Here are the procedures of designing an A/B testing experiment:
+* constructing comparable cohorts
+* sanity check on invariant variable
+* choosing variant metrics
+* determining unit of analysis
+* 
+
+A/B testing is suitable when the analyzed data has fewer columns than rows, and by saying **fewer**, I mean several magnitudes smaller. The reason for such enormous volume of data is that A/B testing (or hypothesis testing in general) is essentially testing the statistical significance of the difference in the parameters of fitted parametric distributions from the control group versus the treatment group. Obviously, the volume of data required (a.k.a., sample size in hypothesis testing) to make a statement in the fashion of A/B testing is related to the level of desired statistical power, variation of the data itself, and the data proximity of the treatment group and the control group.
+
+What I like about A/B testing is its structure. The theory is indeed profound, formally addressing various concerns considering the joint effects of parameter gap, standard deviation, and level of belief. What I don't like about A/B testing is the inefficiency when making inference. The fact that required sample size scales faster than the statistical power does not make sense ([test here via an online calculator](https://www.evanmiller.org/ab-testing/sample-size.html)). In real life, the accessibility of data comes with a cost. If the cost of achieving each 1% increase in statistical power grows even faster than the benefit (statistical power) itself, the diminishing marginal benefit effect will eventually become a major issue capping the power of A/B testing in real life, where the resources of conducting an A/B testing (time, traffic flow) are typically limited.
+
+In short, A/B testing is useful for drawing qualitative statement addressing risk level (like online testing), and other variations of the naive A/B testing like non-parameteric distribution and Bayesian approaches do exist. For the specific evaluation purpose, A/B testing is a good enough tool and worth learning.
 
 ---
 ## Causal inference
@@ -82,4 +98,4 @@ My takeaways from the project are:
 
 Although I tried out some new methods that I have not been touched before, there is still a long way becoming an expert in the field. I'm currently reading the [probabilistic graphic model](https://mitpress.mit.edu/books/probabilistic-graphical-models) book by Daphne Koller and Nir Friedman, and I find it really interesting. Even though Judia Pearl has already won the 2011 Turing Award for his contribution in the theories of probabilistic causal inference, I believe this field will definitely draw even more attentions in the future.
 
-I'll update this section after I finish reading the book.
+I'll update this section after I finish reading the book. Stay tuned!
