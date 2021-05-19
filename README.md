@@ -63,3 +63,17 @@ screenshot
 The field of **casual inference** is not new, but I came across the name quite recently. It was confusing for me at the beginning by looking at the name. With some knowledge of regression analysis, I have been told that the interpretation of linear regression should imply correlation but never causality. In other words, using the terminology of graph theory, the relationship between two variables/nodes is undirected rather than singly directed. The question then becomes how to determine the direction of the edge from one side to the other side rather the other way round?
 
 Well, if one variable is observed during the prerequisite procedure of the other variable (like an upstream-downstream setup), it is safe to say that one caused the other. For more general cases, when lacking of context about how data is produced, it is not that easy to assert the causal effect using data only. Beared with such concerns in mind, I explored some common ways of making causal inference by completing a Coursera project (as [here](/Causal%20Inference/)).
+
+The project covered the following methods:
+* Fixed-effect regression
+* Discontinued regression
+* Difference in difference
+* Instrumental variable
+* Double selection
+* Causal forest
+
+My takeaways from the project are:
+* Fixed-effect regression and discontinued regression mostly deal with the more ideal situations, where the treatment variable is assumed to be independent from other explanatory variables and the effects of the treatment variable can be expressed using constant or piece-wise linear addition, which is good enough to represent simple scenarios.
+* Similarly, difference in difference compares the treatment group with the control group by measuring the linear difference between the actual treatment outcome and the virtual treatment group corrected by the pattern observed for the control group. Again, it relies on the assumption that the effect of the treatment variable is linearly additive to the predicted variable.
+* Instrumental variable and double selection come into the analysis when the explanatory variables are in fact correlated with each other and we are trying to alleviate covariation. What instrumental variable does is reasoning using the concept of conditional independence, and it relies on the selection of covariates as instrumental variable. Double selection addresses the similar problem using an alternative heuristic. It exploits the fact the L1 regularization in LASSO performs feature selection, which prevents the overfitting caused by covariates. By including all non-zero-coefficient predictors in both the LASSO regression models of `response ~ predictor` and `treatment variable ~ predictor`, double selection aims to avoid the corruption of covariates by simply not including them in final model and leaving the treatment variable as the only functioning factor.
+* 
