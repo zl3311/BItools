@@ -27,7 +27,9 @@ I originally thought Tableau is some sort of statistical programming language, l
 * The visualization dashboard can be set as interactive. After checking the gallery from the Tableau website, I really enjoyed the interactive nature, because it gives users the freedom to explore the data patterns from their own perspectives. Although similar visualization applications have been developed (like Plotly), Tableau is still a popular choice based on my observation.
 * The ingestion of data can be made online. This is practically useful when building real-time dashboards for decision makers to understand and react to the business directly.
 
-To learn Tableau, I watched this [tutorial video](https://youtu.be/aHaOIvR00So) and enhanced the skill by accomplishing a project from Coursera. In the Coursera project:
+To learn Tableau, I watched this [tutorial video](https://youtu.be/aHaOIvR00So) and enhanced the skill by accomplishing a project from Coursera. 
+
+In the project:
 * I collected the stock related data from Google Finance website using the `GOOGLEFINANCE` API inside Google Sheet (The eco-system of Google applications actually surprised me. I didn't know previously that I could do that in Google Apps). Data can be setup to update automatically.
 * The Google Sheet can be connected to the ingestion port of Tableau, and the figures and dashboard can be further constructed upon that. For this project, I created a heatmap of the market share of some major Tech companies as size and their percent of change for the day as color. Also, I created a time series figure of these companies over the past month. Then, these plots are merged into a dashboard. Note that the file here is static, it can be made interactive and online using a paid service of Tableau. 
 
@@ -36,9 +38,9 @@ Check out here for my [code and certificate](/Tableau/).
 ---
 ## Facebook Prophet
 
-The name of **Facebook Prophet** was pushed to me several times when I was browsing blogs on Medium.com. Out of curiosity, I dived deeper into it.
+The name of **Facebook Prophet** was pushed to me several times when I was browsing DS blogs on Medium.com. Out of curiosity, I dived deeper into it.
 
-I do have some experience on time series analysis using different approaches, and I personally classify common methods into two categories:
+I do have some experience in time series analysis using different approaches, and I personally classify common methods into two categories:
 * Statistics approaches. I put methods like ARIMA family and filter-based methods (Holt Winters, LOWESS, STL decomposition...) into this category. These methods are popular among the statistics and the econometric communities, where interpretability matters a lot more than model performance. It's true that there is nothing bad about interpretability. However, when model performance is a major drawback, interpretability might become relatively less important in these cases, which leads to the popularity of the next category.
 * Deep learning approaches. DL-based sequential models, e.g., RNNs, LSTMs, and variations like with CNNs/encoders and decoders, suffer the same common drawback as almost all deep learning methods: **blackbox nature**, which means that it's really a mess to dive deep into the intermediate layers and understand what is actually happening. Despite the mess, DL models are generally better at representing highly nonlinear patterns, which means that these models would most likely outperform the above classic statistics approaches for cases with abundunt data and complex relationships. 
 
@@ -48,9 +50,9 @@ Essentially, Facebook Prophet is similar with the decomposition approaches, wher
 * Tunable forecast.
 * Available in R and Python.
 
-Now, where does Facebook Prophet stand? I played with the package in Python through a Coursera project (as [here](/Prophet/)), where I forecasted the time series of Avacado price, and my feeling is mixed. What I like about Prophet is that it is scalable in optimization thus faster in implementation. Also, external information, like holidays, can be manually incorporated into the models, which adds flexibility to model. There are many blogs comparing classic time series models with it, and results are dataset-dependent. While I reserve my attitude about its capability, I really think that Facebook DS team should re-design the API of the package. For example, you have to priorly create the container of the null output dataframe explicitly and call the fitted model that creates the prediction. Seriously, Facebook? I have never seen any time series package with such user-unfriendly design! :-1:
+Now, where does Facebook Prophet stand? After playing with the package in Python through a Coursera project (as [here](/Prophet/)), where I forecasted the time series of Avacado price, my feeling is mixed. What I like about Prophet is that it is scalable in optimization thus faster in implementation. Also, external information, like holidays, can be manually incorporated into the models, which adds flexibility to model. There are many blogs comparing classic time series models with it, and results are dataset-dependent. While I reserve my attitude about its capability, I really think that Facebook DS team should re-design the API of the package. For example, you have to priorly create the container of the null output dataframe explicitly and call the fitted model that creates the prediction. Seriously, Facebook? I have never seen any time series package with such user-unfriendly design! :-1:
 
-Overall, I tend to believe that the performances of these recent time series models (Prophet and also DeepAR from Amazon) are somewhere between the two extreme categories as I mentioned above. It's good to see that there are recent progresses from these big techs, but I look forward to seeing them create something more general and powerful in the future.
+Anyway, I tend to believe that the performances of these recent time series models (Prophet and also DeepAR from Amazon) are somewhere between the two extreme categories as I mentioned above. It's good to see that there are recent progresses from these big techs, but I look forward to seeing them create something more general and powerful in the future.
 
 ---
 
@@ -60,9 +62,9 @@ screenshot
 ---
 ## Causal inference
 
-The field of **casual inference** is not new, but I came across the name quite recently. It was confusing for me at the beginning by looking at the name. With some knowledge of regression analysis, I have been told that the interpretation of linear regression should imply correlation but never causality. In other words, using the terminology of graph theory, the relationship between two variables/nodes is undirected rather than singly directed. The question then becomes how to determine the direction of the edge from one side to the other side rather the other way round?
+The field of **casual inference** is not new, but I came across the name quite recently. It was confusing for me at the beginning by looking at the name. With some knowledge of regression analysis, I have been told that the interpretation of linear regression should only imply correlation but never causality. In other words, using the terminology of graph theory, the relationship between two variables/nodes is undirected rather than singly directed. The question then becomes how to determine the direction of the edge from one side to the other side rather the other way round.
 
-Well, if one variable is observed during the prerequisite procedure of the other variable (like an upstream-downstream setup), it is safe to say that one caused the other. For more general cases, when lacking of context about how data is produced, it is not that easy to assert the causal effect using data only. Beared with such concerns in mind, I explored some common ways of making causal inference by completing a Coursera project (as [here](/Causal%20Inference/)).
+To start with an easier setup, if one variable is observed during the prerequisite procedure of the other variable (like an upstream-downstream setup), it is safe to say that one caused the other. For more general cases, when lacking of context about how data is produced, it is not that easy to assert the causal effect using data only. Beared with such concerns in mind, I explored some common ways of making causal inference by completing a Coursera project (as [here](/Causal%20Inference/)).
 
 The project covered the following methods:
 * Fixed-effect regression
