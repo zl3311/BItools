@@ -63,11 +63,12 @@ I watched the [publicly available MOOC on A/B testing](https://www.udacity.com/c
 **A/B testing** is an application of statistical experiment design in the domain of user experience research. That is to say, the theory of hypothesis testing and statistical inference still holds here. 
 
 Here are the procedures of designing an A/B testing experiment:
-* constructing comparable cohorts
-* sanity check on invariant variable
+* construct comparable cohorts (unit of analysis, exposure/duration: relatively short term user patterns are similar, no long term effect)
+* setup the hypothesis of variant metric
+* sanity check on invariant variables 
 * choosing variant metrics
-* determining unit of analysis
-* 
+* determining sample size given hypothesis
+* sanity check on invariant hypothesis and accept/reject hypothesis
 
 A/B testing is suitable when the analyzed data has fewer columns than rows, and by saying **fewer**, I mean several magnitudes smaller. The reason for such enormous volume of data is that A/B testing (or hypothesis testing in general) is essentially testing the statistical significance of the difference in the parameters of fitted parametric distributions from the control group versus the treatment group. Obviously, the volume of data required (a.k.a., sample size in hypothesis testing) to make a statement in the fashion of A/B testing is related to the level of desired statistical power, variation of the data itself, and the data proximity of the treatment group and the control group.
 
