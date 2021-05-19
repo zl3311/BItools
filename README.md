@@ -63,12 +63,11 @@ I watched the [publicly available MOOC on A/B testing](https://www.udacity.com/c
 **A/B testing** is an application of statistical experiment design in the domain of user experience research. That is to say, the theory of hypothesis testing and statistical inference still holds here. 
 
 Here are the procedures of designing an A/B testing experiment:
-* construct comparable cohorts (unit of analysis, exposure/duration: relatively short term user patterns are similar, no long term effect)
-* setup the hypothesis of variant metric
-* sanity check on invariant variables 
-* choosing variant metrics
-* determining sample size given hypothesis
-* sanity check on invariant hypothesis and accept/reject hypothesis
+* Construct comparable cohorts. Here, the goal is to setup two populations that are only different in the treatment variable and identical otherwise. This includes determining the unit of analysis (cookie, user, etc.) and the duration of exposure. Ideally, short term experiment (like a snapshot of the user) is preferred avoiding the long term learning effect of users.
+* Setup the hypothesis of variant metric. Here, the goal is translated to the language of statistical inference. First, a metric has to be chosen to represent the effects of experiment outcome. Common metrics include click ratio and number of clicks as in customer facing setup. After determining the metric, assumptions can be made on the distributions of the variable, which helps quantifying the uncertainty. Finally, an hypothesis asserting the difference in the metric is formed.
+* Sanity-check invariant variables. The goal here is to make sure that the two groups are indeed comparable for the variables other than the treatment one.
+* Determine sample size given hypothesis. Given the assumptions of the hypothesis and the desired statistical power, the sample size of experiment can be directly looked up from those two-way tables.
+* Collect results and draw conclusion. After designing the experiment properly, the experiment is implemented and monitored. Results will be collected and streamed into the test for observation. Once all necessary data has been collected, related calculation are conducted to determine whether the null hypothesis should be accepted/rejected.
 
 A/B testing is suitable when the analyzed data has fewer columns than rows, and by saying **fewer**, I mean several magnitudes smaller. The reason for such enormous volume of data is that A/B testing (or hypothesis testing in general) is essentially testing the statistical significance of the difference in the parameters of fitted parametric distributions from the control group versus the treatment group. Obviously, the volume of data required (a.k.a., sample size in hypothesis testing) to make a statement in the fashion of A/B testing is related to the level of desired statistical power, variation of the data itself, and the data proximity of the treatment group and the control group.
 
